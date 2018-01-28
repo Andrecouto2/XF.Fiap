@@ -1,16 +1,27 @@
 ﻿using Xamarin.Forms;
 using System.Threading.Tasks;
 using XF.Atividade06.View;
+using XF.Atividade06.ViewModel;
 
 namespace XF.Atividade06
 {
     public partial class App : Application
     {
+        #region ViewModels
+        public static UsuarioViewModel UsuarioVM { get; set; }
+        #endregion
+
         public App()
         {
             InitializeComponent();
+            InitializeComponent();
 
             MainPage = new NavigationPage(new XF_Atividade06Page());
+        }
+
+        private void InitializeApplication()
+        {
+            if (UsuarioVM == null) UsuarioVM = new UsuarioViewModel();
         }
 
         public async static Task NavigateToProfile(string message)
