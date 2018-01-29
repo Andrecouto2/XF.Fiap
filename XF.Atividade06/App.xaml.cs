@@ -14,9 +14,9 @@ namespace XF.Atividade06
         public App()
         {
             InitializeComponent();
-            InitializeComponent();
+            InitializeApplication();
 
-            MainPage = new NavigationPage(new XF_Atividade06Page());
+            MainPage = new NavigationPage(new XF_Atividade06Page() { BindingContext = UsuarioVM});
         }
 
         private void InitializeApplication()

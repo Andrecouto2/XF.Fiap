@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using XF.Atividade06.View;
+using XF.Atividade06.ViewModel;
 
 namespace XF.Atividade06
 {
@@ -16,6 +17,8 @@ namespace XF.Atividade06
         public XF_Atividade06Page()
         {
             InitializeComponent();
+
+            BindingContext = new UsuarioViewModel();
         }
 
         protected override void OnAppearing()
