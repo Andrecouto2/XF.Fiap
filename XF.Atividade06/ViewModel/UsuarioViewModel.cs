@@ -32,7 +32,7 @@ namespace XF.Atividade06.ViewModel
             this.Nome = paramUser.Username;
             if (UsuarioRepository.IsAutorizado(paramUser))
                 App.Current.MainPage.Navigation.PushAsync(
-                    new View.ProfileView(paramUser.Username));
+                    new View.AtividadeView());
             else
                 App.Current.MainPage.DisplayAlert("Atenção", "Usuário não autorizado", "Ok");
         }
