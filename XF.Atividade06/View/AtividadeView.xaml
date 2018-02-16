@@ -35,7 +35,7 @@
                                               CommandParameter="{Binding .}" />
                                 </ViewCell.ContextActions>
                                 <StackLayout Padding="5,0,5,0">
-                                    <Label Text="{Binding Descricacao}" Font="15" />
+                                    <Label Text="{Binding Descricao}" Font="15" />
                                     <Label Text="{Binding Nota}" Font="12" />
                                 </StackLayout>
                             </ViewCell>

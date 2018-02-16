@@ -1,17 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Globalization;
 using System.Net.Http;
 using System.Runtime.Serialization.Json;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
+using XF.Atividade06.Util;
 
 namespace XF.Atividade06.Model
 {
     public class Atividade
     {
         public int Id { get; set; }
-        public DateTime DataCadastro { get; set; }
-        public DateTime DataEntrega { get; set; }
+        public string DataCadastro { get; set; }
+        public string DataEntrega { get; set; }
         public bool TipoAvaliacao { get; set; }
         public string Descricao { get; set; }
         public int Nota { get; set; }
